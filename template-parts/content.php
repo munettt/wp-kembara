@@ -8,7 +8,7 @@
  */
 
 ?>
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('mpost'); ?>>
 	<div class="post-header">
 		<?php
 		if ( is_single() ) :

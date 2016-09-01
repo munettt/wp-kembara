@@ -8,13 +8,18 @@
  */
 
 ?>
-
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-	</header><!-- .entry-header -->
-
-	<div class="entry-content">
+<article id="post-<?php the_ID(); ?>" <?php post_class('mpost'); ?>>
+	<div class="post-header">
+		<?php
+		if ( is_single() ) :
+			the_title( '<h2 class="entry-title">', '</h2>' );
+		else :
+			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+		endif;
+		?>
+	</div>
+	<div class="post-body">
+		
 		<?php
 			the_content();
 
@@ -23,10 +28,10 @@
 				'after'  => '</div>',
 			) );
 		?>
-	</div><!-- .entry-content -->
 
+	</div>
 	<?php if ( get_edit_post_link() ) : ?>
-		<footer class="entry-footer">
+		<footer class="post-footer">
 			<?php
 				edit_post_link(
 					sprintf(
@@ -40,4 +45,4 @@
 			?>
 		</footer><!-- .entry-footer -->
 	<?php endif; ?>
-</article><!-- #post-## -->
+</article>

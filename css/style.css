@@ -84,21 +84,21 @@ a:hover, a:focus { color:#e0474c; text-decoration:none; }
 
 #page-container { margin-top:3rem; }
 
-.post { }
-.post + .post { margin-top:5rem }
-.post a { transition: color 0.3s ease 0s; }
-.post .post-header { }
-.post .post-header h2 { text-align:center; text-transform:uppercase }
-.post .post-header h2 a { font-size:2.6rem; font-weight:700; color:#111 }
-.post .post-header h2 a:hover { text-decoration:none; color:#333 }
+.mpost { }
+.mpost + .post { margin-top:5rem }
+.mpost a { transition: color 0.3s ease 0s; }
+.mpost .post-header { }
+.most .post-header h2 { text-align:center; text-transform:uppercase }
+.mpost .post-header h2 a { font-size:2.6rem; font-weight:700; color:#111 }
+.mpost .post-header h2 a:hover { text-decoration:none; color:#333 }
 
-.post .post-meta { text-align:center; color:#aaa; font-size: 0.8rem; letter-spacing:1px; text-transform:uppercase;  }
-.post .post-meta a { color:#888 }
+.mpost .post-meta { text-align:center; color:#aaa; font-size: 0.8rem; letter-spacing:1px; text-transform:uppercase;  }
+.mpost .post-meta a { color:#888 }
 
-.post .post-body { margin:1.5rem 0; }
-.post .post-body ::-moz-selection { background: #7acfd6; color:#fff}
-.post .post-body ::selection { background: #7acfd6; color:#fff }
-.post .img-fluid + p { margin-top:1.5rem; }
+.mpost .post-body { margin:1.5rem 0; }
+.mpost .post-body ::-moz-selection { background: #7acfd6; color:#fff}
+.mpost .post-body ::selection { background: #7acfd6; color:#fff }
+.mpost .img-fluid + p { margin-top:1.5rem; }
 
 #secondary-nav { background:#eee; margin-top:2rem; padding:1.5rem 0; font-size:0.9rem; }
 #secondary-nav h4.title { font-weight:700; text-transform:uppercase; font-size:0.8rem; color:#555; }
@@ -106,9 +106,13 @@ a:hover, a:focus { color:#e0474c; text-decoration:none; }
 #secondary-nav .social-list .list-inline-item a:hover { color:#aaa }
 
 /* UTILITIES */
+#content { min-height:50vh }
+
 .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);
   position: absolute !important;
 }
 
 .tags .tag a, .categories .tag a { color:#fff }
+
+.page-header h1, .page-header h2 { font-weight:700 }

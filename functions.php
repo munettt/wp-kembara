@@ -90,10 +90,10 @@ function kembara_widgets_init() {
 		'name'          => esc_html__( 'Sidebar', 'kembara' ),
 		'id'            => 'sidebar-1',
 		'description'   => esc_html__( 'Add widgets here.', 'kembara' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
+		'before_widget' => '<div class="col-xs-6 col-sm-3 clearfix widget %2$s" id="%1$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h4 class="title">',
+		'after_title'   => '</h4>',
 	) );
 }
 add_action( 'widgets_init', 'kembara_widgets_init' );
@@ -133,11 +133,12 @@ function kembara_scripts() {
 add_action( 'wp_enqueue_scripts', 'kembara_scripts' );
 
 require get_template_directory() .'/inc/bs4navwalker.php';
+require get_template_directory() .'/inc/widget.php';
 
 /**
  * Implement the Custom Header feature.
  */
-require get_template_directory() . '/inc/custom-header.php';
+//require get_template_directory() . '/inc/custom-header.php';
 
 /**
  * Custom template tags for this theme.
@@ -169,3 +170,22 @@ function add_image_responsive_class($content) {
 }
 
 add_filter('the_content', 'add_image_responsive_class');
+
+/* search form bs4 */
+/**
+ * Generate custom search form
+ *
+ * @param string $form Form HTML.
+ * @return string Modified form HTML. 
+ */
+function kembara_search_form( $form ) {
+    $form = '<form role="search" method="get" id="searchform" class="searchform" action="' . home_url( '/' ) . '" >
+    <div class="input-group"><label class="screen-reader-text" for="s">' . __( 'Search for:' ) . '</label>
+    <input type="text" class="form-control" value="' . get_search_query() . '" name="s" id="s" />
+    <span class="input-group-btn"><input type="submit" id="searchsubmit" class="btn btn-primary" value="'. esc_attr__( 'Search' ) .'" /></span>
+    </div>
+    </form>';
+ 
+    return $form;
+}
+add_filter( 'get_search_form', 'kembara_search_form' );
