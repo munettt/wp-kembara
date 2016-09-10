@@ -6,7 +6,7 @@
  *
  * @package kembara
  */
-
+$comment = 0;
 get_header(); ?>
 
 	<div id="primary" class="content-area">
@@ -19,17 +19,17 @@ get_header(); ?>
 
 			the_post_navigation();
 
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
+			$comment = 1;
 
 		endwhile; // End of the loop.
 		?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
 <?php
+// If comments are open or we have at least one comment, load up the comment template.
+if ( $comment == 1 && ( comments_open() || get_comments_number() ) ) :
+	comments_template();
+endif;
 get_sidebar();
 get_footer();
