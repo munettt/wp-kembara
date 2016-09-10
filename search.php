@@ -14,7 +14,7 @@ get_header(); ?>
 		if ( have_posts() ) : ?>
 
 			<header class="page-header">
-				<h4 class="page-title"><?php printf( esc_html__( 'Search Results for: %s', 'kembara' ), '<span>' . get_search_query() . '</span>' ); ?></h4>
+				<h3 class="page-title"><?php printf( esc_html__( 'Search Results for: %s', 'kembara' ), '<span>' . get_search_query() . '</span>' ); ?></h3>
 			</header><!-- .page-header -->
 			
 			<?php

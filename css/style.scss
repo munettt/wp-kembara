@@ -193,3 +193,30 @@ a {
 .navigation .nav-links .nav-next { float:right; }
 .navigation .nav-links .nav-previous::before { font-family:"Ionicons"; content:"\f107"; font-size:1rem; color:#ccc; margin-right:0.5rem; }
 .navigation .nav-links .nav-next::after { font-family:"Ionicons"; content:"\f10a"; font-size:1rem; color:#ccc; margin-left:0.5rem; }
+
+/* midline */
+.separator {
+    overflow: hidden;
+    text-align: center;
+}
+.separator:before,
+.separator:after {
+    background-color: #ccc;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+.separator:before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+.separator:after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+
+.page-header { text-align:center; border:1px solid #eee; padding:0.6rem 1.2rem; margin-bottom:2rem; }
+.page-header h3 { font-size:1.6rem; font-weight:400; color:#666; }

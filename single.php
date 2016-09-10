@@ -6,7 +6,6 @@
  *
  * @package kembara
  */
-$comment = 0;
 get_header(); ?>
 
 	<?php
