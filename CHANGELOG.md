@@ -1,8 +1,12 @@
 # Changelog
 
+### 1.0.2 (September 10, 2016)
+
+  - Removed unused images and update style.css
+
 ### 1.0.1 (September 10, 2016)
 
-  - UPDATED README.md
+  - Update README.md
 
 ### 1.0.0 (September 10, 2016)
 
