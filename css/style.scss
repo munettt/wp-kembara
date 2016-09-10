@@ -194,6 +194,20 @@ a {
 .navigation .nav-links .nav-previous::before { font-family:"Ionicons"; content:"\f107"; font-size:1rem; color:#ccc; margin-right:0.5rem; }
 .navigation .nav-links .nav-next::after { font-family:"Ionicons"; content:"\f10a"; font-size:1rem; color:#ccc; margin-left:0.5rem; }
 
+#image-navigation { 
+	
+	overflow:hidden; 
+	margin:2.5rem 0; 
+
+
+	.previous-image { float:left; }
+	.next-image { float:right; }
+	.previous-image::before { font-family:"Ionicons"; content:"\f107"; font-size:1rem; color:#ccc; margin-right:0.5rem; }
+	.next-image::after { font-family:"Ionicons"; content:"\f10a"; font-size:1rem; color:#ccc; margin-left:0.5rem; }
+
+}
+
+
 /* midline */
 .separator {
     overflow: hidden;

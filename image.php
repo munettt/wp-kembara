@@ -27,8 +27,8 @@ get_header();
 				</div><!-- .entry-meta -->
 
 				<nav id="image-navigation">
-					<span class="previous-image"><?php previous_image_link( false, __( '&larr; Previous', 'kembara' ) ); ?></span>
-					<span class="next-image"><?php next_image_link( false, __( 'Next &rarr;', 'kembara' ) ); ?></span>
+					<span class="previous-image"><?php previous_image_link( false, __( 'Previous', 'kembara' ) ); ?></span>
+					<span class="next-image"><?php next_image_link( false, __( 'Next', 'kembara' ) ); ?></span>
 				</nav><!-- #image-navigation -->
 			</header><!-- .entry-header -->
 
