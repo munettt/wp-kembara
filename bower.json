@@ -1,6 +1,6 @@
 {
   "name": "kembara",
-  "homepage": "https://github.com/munettt/kembara-template",
+  "homepage": "https://github.com/munettt/wp-kembara",
   "authors": [
     "Munzir Rosdi <munzir@gmail.com>"
   ],
@@ -16,7 +16,7 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap": "v4.0.0-alpha.3",
+    "bootstrap": "v4.0.0-alpha.4",
     "Ionicons": "ionicons#^2.0.1"
   }
 }

@@ -33,7 +33,6 @@
 			&#9776;
 		  </button>
 
-		  <div class="collapse navbar-toggleable-xs" id="topnav">
 			<?php
 			// Use the new walker
 			 wp_nav_menu([
@@ -41,7 +40,7 @@
 				'theme_location'  => 'primary',
 				'container'       => 'div',
 				'container_id'    => 'topnav',
-				'container_class' => 'collapse navbar-toggleable-sm',
+				'container_class' => 'collapse navbar-toggleable-xs',
 				'menu_id'         => false,
 				'menu_class'      => 'nav navbar-nav',
 				'depth'           => 2,
@@ -49,7 +48,6 @@
 				'walker'          => new bs4navwalker()
 			]);
 			?>
-		  </div>
 		</nav>
 
 	</header>
