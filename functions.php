@@ -90,7 +90,7 @@ function kembara_widgets_init() {
 		'name'          => esc_html__( 'Sidebar', 'kembara' ),
 		'id'            => 'sidebar-1',
 		'description'   => esc_html__( 'Add widgets here.', 'kembara' ),
-		'before_widget' => '<div class="col-xs-6 col-sm-3 clearfix widget %2$s" id="%1$s">',
+		'before_widget' => '<div class="col-xs-12 col-sm-3 clearfix widget %2$s" id="%1$s">',
 		'after_widget'  => '</div>',
 		'before_title'  => '<h4 class="title">',
 		'after_title'   => '</h4>',
@@ -111,7 +111,7 @@ function kembara_scripts() {
 	wp_enqueue_style( 'kembara-style-asset-style', get_template_directory_uri() .'/dist/css/style.css' );
 
 	//ionicons
-	wp_enqueue_style( 'kembara-style-asset-ionicons', get_template_directory_uri() .'/dist/Ionicons/css/ionicons.min.css' );
+	wp_enqueue_style( 'kembara-style-asset-ionicons', get_template_directory_uri() .'/dist/fonts/Ionicons/css/ionicons.min.css' );
 
 	//style
 	wp_enqueue_script( 'theme-main-app-js', get_template_directory_uri() . '/dist/js/app.js', array(), '20160901', true );
@@ -128,7 +128,8 @@ function kembara_scripts() {
 add_action( 'wp_enqueue_scripts', 'kembara_scripts' );
 
 require get_template_directory() .'/inc/bs4navwalker.php';
-require get_template_directory() .'/inc/widget.php';
+require get_template_directory() .'/inc/widgets.php';
+
 
 /**
  * Implement the Custom Header feature.
