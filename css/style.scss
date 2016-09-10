@@ -183,3 +183,13 @@ a {
 #comments-section #comments { padding:2.2rem 0}
 #reply-title { font-weight:700; }
 .required { color:red; }
+
+
+
+/* navigation */
+.navigation { margin:2.5rem 0;}
+.navigation .nav-links { overflow:hidden; }
+.navigation .nav-links .nav-previous { float:left; }
+.navigation .nav-links .nav-next { float:right; }
+.navigation .nav-links .nav-previous::before { font-family:"Ionicons"; content:"\f107"; font-size:1rem; color:#ccc; margin-right:0.5rem; }
+.navigation .nav-links .nav-next::after { font-family:"Ionicons"; content:"\f10a"; font-size:1rem; color:#ccc; margin-left:0.5rem; }
