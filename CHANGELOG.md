@@ -1,5 +1,9 @@
 # Changelog
 
+### 1.0.3 (September 10, 2016)
+
+  - Comments styling and misc bugfixes
+
 ### 1.0.2 (September 10, 2016)
 
   - Removed unused images and update style.css
