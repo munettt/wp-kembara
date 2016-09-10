@@ -1,5 +1,8 @@
 # Changelog
 
+### 1.0.1 (September 10, 2016)
+
+  - UPDATED README.md
 
 ### 1.0.0 (September 10, 2016)
 
