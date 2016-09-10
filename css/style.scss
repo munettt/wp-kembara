@@ -202,16 +202,16 @@ a {
 .navigation .nav-links .nav-previous::before { font-family:"Ionicons"; content:"\f107"; font-size:1rem; color:#ccc; margin-right:0.5rem; }
 .navigation .nav-links .nav-next::after { font-family:"Ionicons"; content:"\f10a"; font-size:1rem; color:#ccc; margin-left:0.5rem; }
 
-#image-navigation { 
-
+#image-navigation 
+{ 
 	overflow:hidden; 
 	margin:2.5rem 0; 
 
 
-	.previous-image { float:left; }
-	.next-image { float:right; }
-	.previous-image::before { font-family:"Ionicons"; content:"\f107"; font-size:1rem; color:#ccc; margin-right:0.5rem; }
-	.next-image::after { font-family:"Ionicons"; content:"\f10a"; font-size:1rem; color:#ccc; margin-left:0.5rem; }
+	.previous-image a { float:left; }
+	.next-image a { float:right; }
+	.previous-image a::before { font-family:"Ionicons"; content:"\f107"; font-size:1rem; color:#ccc; margin-right:0.5rem; }
+	.next-image a::after { font-family:"Ionicons"; content:"\f10a"; font-size:1rem; color:#ccc; margin-left:0.5rem; }
 
 }
 
@@ -242,3 +242,4 @@ a {
 
 .page-header { text-align:center; border:1px solid #eee; padding:0.6rem 1.2rem; margin-bottom:2rem; }
 .page-header h3 { font-size:1.6rem; font-weight:400; color:#666; }
+.entry-meta { margin-top:2rem }
