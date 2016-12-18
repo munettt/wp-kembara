@@ -1,5 +1,11 @@
 # Changelog
 
+### 1.0.4 (18 December, 2016)
+
+  - updated bootstrap 4 to alpha 5
+  - minor tweaks to navbar
+  - added .logo-small
+
 ### 1.0.3 (September 10, 2016)
 
   - Comments styling and misc bugfixes
