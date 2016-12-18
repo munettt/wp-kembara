@@ -29,25 +29,34 @@
 		<a class="logo" href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
 		
 		<nav class="navbar">
-		  <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#topnav" aria-controls="topnav" aria-expanded="false" aria-label="Toggle navigation">
-			&#9776;
-		  </button>
+			<div class="container">
+				<div class="row">
+				<div class="col-md-10 col-xs-12 offset-md-1">
+					  <div class="navbar-brand">
+					  	<a class="logo logo-small" href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
+					  </div>
+					  <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#topnav" aria-controls="topnav" aria-expanded="false" aria-label="Toggle navigation">
+						&#9776;
+					  </button>
 
-			<?php
-			// Use the new walker
-			 wp_nav_menu([
-				'menu'            => 'primary',
-				'theme_location'  => 'primary',
-				'container'       => 'div',
-				'container_id'    => 'topnav',
-				'container_class' => 'collapse navbar-toggleable-xs',
-				'menu_id'         => false,
-				'menu_class'      => 'nav navbar-nav',
-				'depth'           => 2,
-				'fallback_cb'     => 'bs4navwalker::fallback',
-				'walker'          => new bs4navwalker()
-			]);
-			?>
+						<?php
+						// Use the new walker
+						 wp_nav_menu([
+							'menu'            => 'primary',
+							'theme_location'  => 'primary',
+							'container'       => 'div',
+							'container_id'    => 'topnav',
+							'container_class' => 'collapse navbar-toggleable-xs',
+							'menu_id'         => false,
+							'menu_class'      => 'nav navbar-nav',
+							'depth'           => 2,
+							'fallback_cb'     => 'bs4navwalker::fallback',
+							'walker'          => new bs4navwalker()
+						]);
+						?>
+					</div>
+				</div>
+				</div>
 		</nav>
 
 	</header>
